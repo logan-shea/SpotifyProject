@@ -15,18 +15,15 @@ namespace Spotify.Controllers
         // GET: Spotify
         public ActionResult Index()
         {
+            ClientCredentialsAuth client = new ClientCredentialsAuth();
+            client.ClientId = "559a2c8e37d946d782cc29bb373a63f0";
+            client.ClientSecret = "23915a1a8a5e406ea1df5bc8baec36e4";
+            Token token = new Token();
+            
+
+
             return View();
         }
-        private static SpotifyWebAPI _spotify;
-
-        public static void Main(String[] args)
-        {
-            _spotify = new SpotifyWebAPI()
-            {
-                UseAuth = false,
-            };
-                FullTrack track = _spotify.GetTrack("3Hvu1pq89D4R0lyPBoujSv");
-            Console.WriteLine(track.Name);
-        }
+       
     }
 }
