@@ -19,7 +19,7 @@ namespace Spotify.Controllers
             client.ClientId = "559a2c8e37d946d782cc29bb373a63f0";
             client.ClientSecret = "23915a1a8a5e406ea1df5bc8baec36e4";
             Token token = new Token();
-            
+            token.
 
 
             return View();
