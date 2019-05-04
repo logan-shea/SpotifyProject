@@ -1,28 +1,36 @@
-﻿@model SpotifyAPI.Web.Models.
+﻿@
 @{
     ViewBag.Title = "Home Page";
+    int i = 0;
 }
 
 <div class="jumbotron">
-    <h1>Spotify API</h1>
-    <p class="lead">Connecting to Spotify and pulling it's Artists, Albums, and Genres</p>
+    <h1>Spotify Top Artists</h1>
+    <p class="lead">Connecting to Spotify and pulling it's Top Artists</p>
 
 </div>
 
 <table class="table">
     <tr>
         <th>
+            Rank
+        </th>
+
+        <th>
             Artists
         </th>
     </tr>
-    @foreach (var item in Model.Name)
-    {
-        <tr>
-            <td>
-                @
-            </td>
-        </tr>
-    }
+    
+    <tr>
+        <td>
+            @{
+                i++;
+            }
+            @i
+        </td>
+        <td></td>
+    </tr>
+
 
 
 
